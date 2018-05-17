@@ -1,4 +1,4 @@
-package org.launchcode.techjobs.console;
+package org.launchcode.techjobs.console.java;
 
 import java.util.ArrayList;
 import java.util.HashMap;
