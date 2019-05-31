@@ -1,5 +1,6 @@
 package org.launchcode.techjobs.console;
 
+
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
@@ -14,12 +15,14 @@ import java.util.List;
 /**
  * Created by LaunchCode
  */
+
 public class JobData {
 
     private static final String DATA_FILE = "resources/job_data.csv";
     private static Boolean isDataLoaded = false;
 
     private static ArrayList<HashMap<String, String>> allJobs;
+
 
     /**
      * Fetch list of all values from loaded data,
@@ -46,6 +49,7 @@ public class JobData {
         return values;
     }
 
+
     public static ArrayList<HashMap<String, String>> findAll() {
 
         // load data, if not already loaded
@@ -53,6 +57,7 @@ public class JobData {
 
         return allJobs;
     }
+
 
     /**
      * Returns results of search the jobs data by key/value, using
@@ -83,6 +88,7 @@ public class JobData {
 
         return jobs;
     }
+
 
     /**
      * Read in data from a CSV file and store it in a list
@@ -124,6 +130,7 @@ public class JobData {
             e.printStackTrace();
         }
     }
+
 
     public static ArrayList<HashMap<String, String>> findByValue(String value) {
 

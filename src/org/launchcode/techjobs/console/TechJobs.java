@@ -1,5 +1,6 @@
 package org.launchcode.techjobs.console;
 
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -7,9 +8,11 @@ import java.util.Scanner;
 /**
  * Created by LaunchCode
  */
+
 public class TechJobs {
 
     private static Scanner in = new Scanner(System.in);
+
 
     public static void main(String[] args) {
 
@@ -66,6 +69,7 @@ public class TechJobs {
         }
     }
 
+
     // ﻿Returns the key of the selected item from the choices Dictionary
     private static String getUserSelection(String menuHeader, HashMap<String, String> choices) {
 
@@ -103,6 +107,7 @@ public class TechJobs {
 
         return choiceKeys[choiceIndex];
     }
+
 
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
